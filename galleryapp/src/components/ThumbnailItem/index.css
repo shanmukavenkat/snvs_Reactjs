@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Thumbnail Container */
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between thumbnails */
+}
+
+/* Thumbnail Item */
+.thumbnail-item {
+    display: flex;
+    flex-wrap: wrap; /* Set a max width for better wrapping */
+    margin: 5px;
+}
+
+/* Button Styling */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    opacity: 0.5;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Thumbnail Image */
+.thumbnail-image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Active Button Styling */
+.active .thumbnail-image {
+    border-bottom: 2px solid #0b69ff;
+    opacity: 1;
+}
+
+/* Flex-wrap on smaller screens */

@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+  
+  }
+  button{
+    margin: 50px;
+    border: none;
+    background-color: #4338dcc1;
+    padding: 20px;
+    border-radius: 10px;
+    color: azure;
+    font-size: 15px;
+  }

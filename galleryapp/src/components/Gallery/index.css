@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}   
+ul{
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image{
+    display: flex;
+    flex-direction: row;
+}
+img{
+    width: 600px;
+}
+.heading{
+ margin:10px;
+ margin-left: 350px;
+}; 
+   
