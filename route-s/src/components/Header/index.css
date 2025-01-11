@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+.logo{
+    width: 50px;
+}
+ul{
+    list-style: none;
+    padding-top: 10px;
+}
+li{
+    list-style: none;
+    margin: 10px;
+
+}
+.text{
+    margin: 5px;
+}
+.logo-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logo-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2px;
+}
