@@ -1,0 +1,18 @@
+/* Write your CSS here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+  }
+
+.name{
+    color:  #00e7ff;
+    text-align: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+  

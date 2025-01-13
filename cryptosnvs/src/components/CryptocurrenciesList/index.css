@@ -1,0 +1,72 @@
+/* Container */
+.crypto-table {
+    border: 2px solid #00e7ff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 600px;
+    margin: 20px auto;
+    background-color: #001f1f;
+    color: #ffffff;
+  }
+  
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #003838;
+  }
+  
+  th {
+    text-align: left;
+    padding: 12px;
+    font-size: 16px;
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid #003838;
+  }
+  
+  tbody tr:last-child {
+    border-bottom: none;
+  }
+  
+  td {
+    padding: 12px;
+    font-size: 14px;
+    vertical-align: middle;
+    color: #ffffff;
+  }
+  
+.bg-color{
+    background-color:#092e33 ;
+    color: #ffffff;
+}
+  /* Coin Icon */
+.coin-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000;
+  }
+
+.name{
+    color:  #00e7ff;
+    text-align: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+  

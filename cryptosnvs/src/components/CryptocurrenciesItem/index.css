@@ -1,0 +1,7 @@
+.alignment{
+    display: flex;
+    flex-direction: row;
+}
+td{
+    color: #ffffff;
+}
