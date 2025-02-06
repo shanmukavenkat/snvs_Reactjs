@@ -3,34 +3,36 @@ import './index.css';
 import CryptocurrenciesItem from '../CryptocurrenciesItem';
 
 class CryptocurrenciesList extends Component {
-  state = { currencyData: [] }
+  state = { currencyData: [] };
 
   componentDidMount() {
-    this.getData()
+    this.getData();
   }
 
   getData = async () => {
-    const response = await fetch('https://apis.ccbp.in/crypto-currency-converter')
-    const dataNew = await response.json()
+    const response = await fetch(
+      'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false'
+    );
+    const dataNew = await response.json();
     const formattedData = dataNew.map((each) => ({
       id: each.id,
-      currency_name: each.currency_name,
-      usd_value: each.usd_value,
-      euro_value: each.euro_value,
-      currency_logo: each.currency_logo
-    }))
-    console.log(formattedData)
+      currency_name: each.name,
+      usd_value: each.current_price,
+      euro_value: (each.current_price * 0.85).toFixed(2), // Approximate EURO conversion
+      currency_logo: each.image,
+    }));
+    console.log(formattedData);
     this.setState({ currencyData: formattedData });
-  }
+  };
 
   render() {
-    const { currencyData } = this.state
+    const { currencyData } = this.state;
     return (
       <>
         <div>
-          <div className='container'>
+          <div className="container">
             <div>
-              <h1 className="name">CryptocurrencyTracker</h1>
+              <h1 className="name">Cryptocurrency Tracker</h1>
             </div>
             <div>
               <img
@@ -51,7 +53,9 @@ class CryptocurrenciesList extends Component {
               </tr>
             </thead>
             <tbody>
-              {currencyData.map(item => <CryptocurrenciesItem theNewData={item} key={item.id} />)}
+              {currencyData.map((item) => (
+                <CryptocurrenciesItem theNewData={item} key={item.id} />
+              ))}
             </tbody>
           </table>
         </div>
