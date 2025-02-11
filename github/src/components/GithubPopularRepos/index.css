@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.heading{
+    font-family: 'Lobster','sans-serif';
+    text-align: center;
+}
+.language-filters-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.loader-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.repo-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
