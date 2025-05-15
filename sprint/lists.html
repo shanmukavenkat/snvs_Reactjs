@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rendering Lists</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!--- BABEL is a JS compiler that converts JSX into JS -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+
+<div id ="root"></div>
+
+<script type="text/babel">
+    let stationary =["pen","pencil","eraser","sharpner"];
+    // we need to render the list of items
+    /*
+       basic idea to render all elements in array is ? create a loop
+       hover on each item in above array when you are actually pointing on one element
+      in array pass them into the component  to render on to the screen
+      */
+
+    /*========================================================================
+let LiItemArr = [];
+    for(let i=0; i<stationary.length;i++){
+        let item = stationary[i];
+        const listItem = <li>{item}</li> //when array us pointing to element then we are including
+        /// that element into Html as above
+        LiItemArr.push(listItem); // we are pushing the element into the array
+    }
+
+=========================================================================*/
+    function List(){
+
+        return(
+            <div>
+            <h2>List Items</h2>
+                {/* <ul>{LiItemArr}</ul>*/}
+
+            <ul>{stationary.map((item)=>{
+                        return <li>{item}</li>
+                        })}
+            </ul>
+            </div>
+                )
+    }
+    ReactDOM.render(
+        <List></List>,
+        document.getElementById('root')
+    )
+</script>
+
+</body>
+</html>

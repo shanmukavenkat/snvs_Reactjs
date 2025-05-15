@@ -29,13 +29,58 @@
 
 <script type="text/babel">
 // we are calling as the component which is Hello
-    function HELLO() {
-        return <h1>Welcome to the world of React</h1>;
+    function HELLO(props) {
+        let {name ,age} = props; // destructuring
+    //
+
+    //------------------------------
+        //let name = "snvskomal"
+    //------------------------------
+        return <h1>Welcome to the day {age} world of React by {name} </h1>; // jsx format
+        // return `<h1>Welcome to the world of React by ${name} </h1>`; // js format
     }//jsx
     //syntax ReactDom.render(component,document.getElementById('root'))
 
-    ReactDOM.render(<HELLO />, document.getElementById('root'));
+///---------another component----------------
+
+    function HELLOPARENT(){
+        return(
+            <div>
+                <HELLO name={"Nxtwave"}> </HELLO>
+                <HELLO name={"SNVSKOMAL"}> </HELLO>
+                <HELLO name={"KOMAL"}> </HELLO>
+            </div>
+        )
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ReactDOM.render(<HELLOPARENT name={"Nxtwave"} age={2}> </HELLOPARENT>, document.getElementById('root'));
 //generally the ReactDOM that which make inject the hello component into the root div
+
+/*
+the HELLO component those create the object like this below ones
+those object that can be also called as the props
+let object = {
+    name : "Nxtwave",
+    age : 2
+}
+
+*
+*/
+
 </script>
 
 </body>
@@ -46,5 +91,14 @@ Purpose of the JS Functions but work in isolation and return HTML
 2. HTML,CSS,JS ==> JSX ==> JS + XML
 3. But the Browser needs a translator who converts JSX
 into the JS and HTMl.Babel is that Translator
-4. JSX is inspired from the template literals of JS (BlackTickets)
+4. JSX is inspired from the template literals of JS (BlackTicks)
+==============================================================================
+5. when we send the properties or attributes with the values for any given component
+the component is react receive all of them in object format.
+why? as to gather all of the attributes for a component react follows the JSON notation
+6. IN react we are trying to break a large component into smaller chunks
+and rendering them using one single large component.where Large Component
+has many small chunks , but it self is returning HTML code, and we have these smaller chunks
+a lot in the larger component.
+
 -->
