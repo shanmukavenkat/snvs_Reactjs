@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Snvs/eventsapp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Snvs/faq" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Snvs/money" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Snvs/paswrd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Snvs/stateandclasscomponents" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Snvs/timer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Snvs/welco" vcs="Git" />
+  </component>
+</project>

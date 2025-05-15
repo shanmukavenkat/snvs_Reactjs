@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!--- BABEL is a JS compiler that converts JSX into JS -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<!--what is react -->
+<!-- just updating the states is known as the react-->
+<!-- react it tries to be the single page application -->
+<!-- it Reduces the usage of cost for DOM operations as Dom operations are costly-->
+<!--we don't need to apply another html navigation   -->
+<!-- the DOM operations is generally given by the environment of js -->
+<!-- document api is the 3rd latest API that is used -->
+<!-- React on other hand ,uses history api , inorder to modify the things -->
+<!-- create-react-app vite etc -->
+<!-- ------------------------------------------- -->
+<!-- CDN Content Delivery Network -->
+<!-- React (is an algorithm where it modifies the user interface ui ) React DOM is support for React Algorithm  -->
+
+<!-- React Focuses on the single page application -->
+<!-- whole application lives inside the below div-->
+<div id="root"></div>
+
+<script type="text/babel">
+// we are calling as the component which is Hello
+    function HELLO() {
+        return <h1>Welcome to the world of React</h1>;
+    }//jsx
+    //syntax ReactDom.render(component,document.getElementById('root'))
+
+    ReactDOM.render(<HELLO />, document.getElementById('root'));
+//generally the ReactDOM that which make inject the hello component into the root div
+</script>
+
+</body>
+</html>
+<!--
+1.Component : these are  independent and reusable bits of code
+Purpose of the JS Functions but work in isolation and return HTML
+2. HTML,CSS,JS ==> JSX ==> JS + XML
+3. But the Browser needs a translator who converts JSX
+into the JS and HTMl.Babel is that Translator
+4. JSX is inspired from the template literals of JS (BlackTickets)
+-->
